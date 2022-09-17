@@ -1,0 +1,275 @@
+@import url("link href =https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;1,100;1,200;1,400;1,500&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Quintessential&family=Raleway:ital,wght@0,400;0,500;0,600;0,800;1,100;1,400;1,500;1,600&family=Roboto:ital,wght@0,300;0,500;1,100;1,300;1,500&family=The+Nautigal:wght@400;700&display=swap" rel="stylesheet">
+);
+
+*,
+*:after,
+*:before{
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:active,
+:hover
+:focus{
+    outline: 0 !important;
+    outline-offset: 0;
+}
+
+a,
+a:hover{
+    color: var(--primary-color) !important;
+}
+
+ul,
+ol{
+    margin: 0;
+    padding: 0;
+}
+
+/*=========== variable define============*/
+:root{
+    --primary-color: #AB2C48;
+    --second-color: #43121d;
+    --third-color: #f98169;
+    --white-color: #fff;
+    --text-color: #555;
+    --text-gray: #999;
+    --black-color: #000;
+    --primary-font:'Roboto', 'sans-serif';
+    --second-font:'Quicksand', 'sans-serif';
+    
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: var(--primary-font);
+    font-size: 100%;
+    font-weight: 400;
+}
+
+/*
+======================
+custom scroll bar
+======================
+*/
+::-webkit-scrollbar{
+    width: 0.625rem;
+}
+
+::-webkit-scrollbar-track{
+    background-color: #fff;
+}
+
+::-webkit-scrollbar-thumb{
+    background: var(--primary-color);
+}
+
+
+/*
+======================
+custom css design
+======================
+*/
+
+h1{
+    font-size: 3rem;
+    font-weight: 900;
+    margin-bottom: 3rem;
+    color: var(--second-color);
+}
+
+h2{
+    font-weight: 700;
+    font-size: 2.25rem;
+    text-transform: capitalize;
+    font-family: var(--second-font);
+    color: var(--second-color);
+    line-height: 3rem;
+}
+
+h4{
+    color: var(--second-color);
+    font-family: var(--second-font);
+    text-transform: capitalize;
+    font-size: 18px;
+    font-weight: 800;
+    margin-bottom: 0.5rem;
+}
+
+h5{
+    color: var(--primary-color);
+    text-transform: capitalize;
+    font-family: var(--second-font);
+    font-size: 1rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+p{
+    font-size: 1rem;
+    color: var(--text-color);
+    font-weight: 400;
+    line-height: 1.75rem;
+    letter-spacing: 1px;
+}
+
+.main-btn {
+    display: inline-block !important;
+    padding: 0.625rem 1.875rem;
+    background-color: var(--primary-color);
+    border: 0.1875rem solid var(--primary-color);
+    color: var(--white-color);
+    font-size: 0.9375rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    box-shadow: 0px 2px 10px -1px rgb(0 0 0 / 19%);
+    -webkit-transition: all .4s ease-out 0s;
+    -o-transition: all .4s ease-out 0s;
+    -moz-transition: all .4s ease-out 0s;
+    transition: all .4s ease-out 0s;
+}
+
+.white-btn {
+    padding: 00.625rem 1.875rem;
+    line-height: 25px;
+    background-color: #fff;
+    border: 0.1875rem solid white;
+    color: var(--text-color);
+    font-size: 00.9375rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    box-shadow: 0px 2px 10px -1px rgb(0 0 0 / 19%);
+    -webkit-transition: all .4s ease-out 0s;
+    -o-transition: all .4s ease-out 0s;
+    -moz-transition: all .4s ease-out 0s;
+    transition: all .4s ease-out 0s;
+
+}
+
+.main-btn:hover {
+    background-color: transparent;
+    color: var(--primary-color);
+}
+
+
+.white-btn:hover {
+    background-color: transparent;
+    color: var(--primary-color);
+    border-color: #AB2C48;
+}
+
+.wrapper{
+    padding-top: 8.25rem;
+    padding-bottom: 8.25rem;
+}
+
+.text-content{
+    width: 70%;
+    margin: auto;
+}
+
+.counter-section h2,
+.testimonial-section h2,
+.book-food-text h2 {
+    color-scheme: var(--white-color);
+}
+
+.top-banner{
+    width: 100%;
+    background: url(./images/black.jpg) no-repeat left;
+    background-size: cover;
+    padding: 16.875rem 0 9.375rem;
+    animation: float 3s linear infinite
+
+}
+
+#home-1{
+    background-color: #AB2C48;
+    color: #000;
+    text-align: center;
+}
+
+
+
+/*
+***********************************
+about section
+***********************************
+*/
+
+#aboutus-section{
+    background: var(--white-color);
+}
+
+.about-section .card,
+.about-section .card img{
+    border-radius:0.625rem;
+}
+.about-section .text-sec{
+    padding-left: 2rem;
+}
+
+
+.about-section{
+    background: var(--black-color);
+}
+
+.about-section .card,
+.about-section .card img{
+    border-radius:0.625rem;
+}
+.about-section .text-sec{
+    padding-left: 2rem;
+}
+
+
+.aboutus-section{
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+}
+
+.aboutus-section h2{
+    text-align: center;
+}
+.about-section{
+    background: white;
+}
+
+.about-section .card,
+.about-section .card img{
+    border-radius:0.625rem;
+}
+.about-section .text-sec{
+    padding-left: 2rem;
+}
+
+
+/*
+====================
+footer
+====================
+*/
+.footer{
+    background: #000;
+    text-align: center;
+}
+.footer .footer-link{
+    font-size: 1rem;
+    color: #fff;
+    padding: 0 1.875rem;
+    text-align: center;
+}
+.footer a{
+    font-size: 1.5rem;
+    color: #fff;
+    padding: 0 1rem;
+    text-align: center;
+}
+
+

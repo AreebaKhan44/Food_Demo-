@@ -1,0 +1,349 @@
+/* Now add font family from google fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400&display=swap');
+
+/* variable */
+
+.root {
+    --main-color: #6280da;
+    --box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.2);
+
+}
+
+/* now add css for all element on page */
+
+* {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all 0.3s ease-in-out;
+}
+
+html {
+    font-size: 65%;
+    overflow-x: hidden;
+
+}
+
+/* Now add css for global classes that will be used for every element but that have a same styling on entire page */
+section {
+    padding: 2rem 7%;
+
+}
+
+.btn {
+    background-color: #000;
+    color: #fff;
+    padding: 1rem;
+    cursor: pointer;
+    font-size: 1.5rem;
+    border-radius: 0.5rem;
+}
+
+.btn:hover {
+    background-color: var(--main-color)
+}
+
+/* mera wala */
+.menu{
+    padding:0 10px 30px 10px;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(350px,1fr));
+    grid-gap: 20px 40px;
+
+
+}
+.heading{
+    background-color:black;
+    color: #AB2C48;
+    margin-bottom:30px;
+    padding:30px 0;
+    grid-column:1/-1;
+    text-align:center;
+
+}
+.heading>h1 {
+    font-weight:400;
+    font-size:30px;
+    letter-spacing:10px;
+    margin-bottom:10px;
+    
+}
+.heading>h3{
+    font-weight:600;
+    font-size:22px;
+    letter-spacing:5px;
+
+}
+
+
+
+/* for navbar */
+header {
+    padding: 1rem 7%;
+    font-size: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+header .navbar-container {
+    min-width: 60vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .navbar-links a {
+    margin-left: 2rem;
+    font-size: 1.7rem;
+    color: #000;
+    font-weight: 600;
+}
+
+header .navbar-links a:hover {
+    color: var(--main-color)
+}
+
+/* home section  */
+
+.home {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.home .content-div {
+    flex: 1 1 40rem;
+
+}
+
+.home .image-div {
+    flex: 1 1 40rem;
+
+}
+
+.home .heading {
+    font-size: 5rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+}
+
+.home .heading .pink-text {
+    color: #d74bb2;
+
+
+}
+
+.home .heading .orange-text {
+    color: #da3e05;
+
+
+}
+
+.home .heading .fa-burger {
+    background: linear-gradient(to right, #da3e05, #d74bb2);
+    border-radius: 50%;
+    font-size: 4rem;
+    padding: 1rem;
+
+}
+
+
+.home .heading .fa-location-dot {
+    background: var(--main-color);
+    border-radius: 50%;
+    padding: 1rem;
+    font-size: 3.4rem;
+
+}
+
+.home .btn-div {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.home .btn-div .video-btn {
+    font-size: 2rem;
+    color: var(--main-color);
+}
+
+/* cards section start */
+.cards-section .cards-div {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5;
+    margin-top: 3rem;
+}
+
+
+
+.cards-section .cards-div .card {
+    padding: 2rem;
+    box-shadow: var(--box-shadow);
+    border-radius: 1.5rem;
+    flex: 1 1 27rem;
+    line-height: 2;
+    text-align: center;
+    color: #fff;
+
+}
+
+.cards-section .cards-div .card img {
+
+    border: 2px solid #000;
+    border-radius: 50%;
+
+}
+
+.cards-section .cards-div .card:hover img {
+    transform: scale(1.1);
+}
+
+.cards-section .cards-div .card .heading {
+    color: #000;
+    font-size: 2rem;
+    font-weight: 600;
+
+}
+
+.cards-section .cards-div .card .text {
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    margin-bottom: 1rem;
+
+}
+
+
+.cards-section .cards-div .card:nth-child(1) {
+    background-color: #d74bb2;
+
+}
+
+.cards-section .cards-div .card:nth-child(2) {
+    background-color: #f0c60dec;
+    transform: scale(1.1);
+
+}
+
+.cards-section .cards-div .card:nth-child(3) {
+    background-color: #da3e05;
+
+}
+
+/* footer */
+.footer {
+    text-align: center;
+    font-size: 3rem;
+
+}
+
+.footer i {
+    margin-left: 1rem;
+    cursor: pointer;
+
+}
+
+.footer i:nth-child(1) {
+    color: var(--main-color);
+}
+
+.footer i:nth-child(2) {
+    color: #da3e05;
+}
+
+.footer i:nth-child(3) {
+    color: var(--main-color);
+}
+
+.footer i:nth-child(4) {
+    color: #d74bb2;
+}
+
+.footer i:hover {
+    transform: translateY(-10%);
+}
+
+/* now make it responsive */
+
+
+@media(max-width:991px) {
+    html {
+        font-size: 55%;
+    }
+}
+
+
+@media(max-width:768px) {
+    html {
+        font-size: 50%;
+    }
+
+    /* now make navbar responsive */
+    header .fa-bars {
+        display: block;
+        font-size: 3rem;
+        cursor: pointer;
+        color: #da3e05;
+        position: absolute;
+        top: 3rem;
+        right: 2rem;
+        z-index: 22;
+    }
+
+    header  .navbar-container{
+        display: none;
+        position: absolute;
+        top: 7rem;
+        right: 4rem;
+        background-color: #fff;
+        border: 2px solid var(--main-color);
+        box-shadow: var(--box-shadow);
+        border-radius: 1rem;
+        padding: 1.5rem;
+        text-align: center;
+        max-width: 10rem;
+
+    }
+
+    header .navbar-container .navbar-links a {
+        display: block;
+        line-height: 2.5;
+
+    }
+
+    header .navbar-container .btn-div {
+        padding: 1rem;
+
+    }
+
+    /* now css for class below that we will add and remove using javascript */
+    header .active {
+        display: block;
+
+    }
+
+    .home {
+        text-align: center;
+    }
+
+
+    .home .btn-div {
+        justify-content: center;
+        gap: 5rem;
+
+    }
+}
+
+@media(max-width:450px) {
+    html {
+        font-size: 40%;
+    }
+}

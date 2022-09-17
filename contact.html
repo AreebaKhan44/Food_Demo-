@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Contact</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+
+body, html {
+  height: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.bg-img {
+  /* The image used */
+  background-image: url("images copy/contact.jpg");
+  
+
+  /* Control the height of the image */
+  min-height: 380px;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+/* Add styles to the form container */
+.container {
+  position: absolute;
+  right: 0;
+  margin: 20px;
+  max-width: 300px;
+  padding: 16px;
+  background-color: white;
+}
+
+/* Full-width input fields */
+  input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #0e0e0e;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit button */
+.btn {
+  background-color: #3004aa;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.btn:hover {
+  opacity: 1;
+}
+</style>
+
+
+</head>
+<body>
+
+
+  <div class="bg-img">
+   
+    <form action="/action_page.php" class="container">
+      <h1>Food Delivery Detail</h1>
+  
+      <label for="text"><b>Full Name</b></label>
+      <input type="text" placeholder="Enter FullName" name="Name" required>
+  
+      <label for="text"><b>Address</b></label>
+      <input type="text" placeholder="Address" name="Address" required>
+
+
+      
+      <label for="ext"><b>Contact no</b></label>
+      <input type="text" placeholder="contact no" name="Contact no" required>
+
+
+     
+  
+      <label for="text"><b>Food Order Detail</b></label>
+      <input type="text" placeholder="Enter Detail" name="Food Order" required>
+  
+      <button type="submit" class="btn">Submit</button>
+    </form>
+  </div>
+
+
+</body>
+
+</html>
